@@ -18,7 +18,7 @@ jobs:
           path: src
       - name: Apply overlay
         run: |
-          unzip -q overlay/overlay.zip -d /tmp/ov
+          unzip -q overlay/.github/workflows/overlay.zip -d /tmp/ov
           cp -r /tmp/ov/files/. src/
       - uses: actions/setup-python@v6
         with:
